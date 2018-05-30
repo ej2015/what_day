@@ -1,6 +1,8 @@
 module WhatDay
 	class Client
 
+		MONTHS = '(jan||feb||mar||apr||may||jun||jul||aug||sep||oct||nov||dec||january||february||march||april||may||june||july||august||september||october||november||december||sept)'.freeze
+
 		def day(date)
 			begin
 				Date::DAYNAMES[date.wday]
@@ -10,7 +12,7 @@ module WhatDay
 		end
 
 		def method_missing(name, *args, &block)
-			if name.to_s =~ /^(beginning||end)_of_[a-z]+_\d+$/i
+			if name.to_s =~ Regexp.new("^(beginning||end)_of_#{MONTHS}_\\d+$", true)
 				date = parse_date_string(name.to_s)
 				day date
 			else
