@@ -3,8 +3,7 @@ module WhatDay
 
 		def day(date)
 			begin
-				day_int = date.yesterday.wday
-				Date::DAYS_INTO_WEEK.key(day_int).to_s.capitalize
+				Date::DAYNAMES[date.wday]
 			rescue ArgumentError
 				nil
 			end
