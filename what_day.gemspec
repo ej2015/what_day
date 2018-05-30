@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["zorro.ej@gmail.com"]
 
   spec.summary       = %q{Simple library to return human-readable day of the week for a given date}
-  spec.description   = %q{}
-  spec.homepage      = ""
+	spec.description   = %q{Queries for the day of a given date, or the day of the beginning or end of a month}
+  spec.homepage      = "https://github.com/ej2015/what_day.git"
   spec.license       = "MIT"
 
 
