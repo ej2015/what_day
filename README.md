@@ -31,9 +31,6 @@ client.beginning_of_March_2018
 client.end_of_mar_2018
 ##Sunday
 
-client.day Date.new(2018,2,33)
-##nil
-
 ```
 
 ## Development

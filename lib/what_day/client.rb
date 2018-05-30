@@ -2,8 +2,12 @@ module WhatDay
 	class Client
 
 		def day(date)
-			day_int = date.yesterday.wday
-			Date::DAYS_INTO_WEEK.key(day_int).to_s.capitalize
+			begin
+				day_int = date.yesterday.wday
+				Date::DAYS_INTO_WEEK.key(day_int).to_s.capitalize
+			rescue ArgumentError
+				nil
+			end
 		end
 
 		def method_missing(name, *args, &block)

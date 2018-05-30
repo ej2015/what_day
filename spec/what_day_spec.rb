@@ -25,7 +25,6 @@ describe WhatDay do
 		end
 	end
 
-
 	describe "#beginning_of_" do
 		it "works with Jan format" do
 			expect(client.beginning_of_aug_2018).to eq "Wednesday"
