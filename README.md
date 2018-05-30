@@ -1,9 +1,5 @@
 # WhatDay
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/what_day`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
+A little gem that returns a human-readable day of the week for a given date.
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+##initialize
+client = WhatDay.client
+
+client.day Date.new(2018,3,4)
+##Sunday
+
+client.beginning_of_March_2018
+##Thursday
+
+client.end_of_mar_2018
+##Sunday
+
+client.day Date.new(2018,2,33)
+##nil
+
+```
 
 ## Development
 
