@@ -1,4 +1,8 @@
 # WhatDay
+[![CodeFactor](https://www.codefactor.io/repository/github/ej2015/what_day/badge)](https://www.codefactor.io/repository/github/ej2015/what_day)
+[![Maintainability](https://api.codeclimate.com/v1/badges/db5073a8a3fdadf2c7e7/maintainability)](https://codeclimate.com/github/ej2015/what_day/maintainability)
+[![Build Status](https://travis-ci.org/ej2015/what_day.svg?branch=master)](https://travis-ci.org/ej2015/what_day)
+
 A little gem that returns a human-readable day of the week for a given date.
 ## Installation
 
