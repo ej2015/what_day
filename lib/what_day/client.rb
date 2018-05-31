@@ -27,7 +27,7 @@ module WhatDay
 			selector = methods[0].downcase
 			month = format_date_string methods[2]
 			year = methods[3].to_i
-			str = "#{year} #{month}, 1"
+			str = "#{year}-#{month}-1"
 			date = Date.parse str
 			selector == "end" ? date.to_date.end_of_month : date
 		end
