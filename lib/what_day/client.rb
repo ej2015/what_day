@@ -4,11 +4,9 @@ module WhatDay
 		MONTHS = '(jan||feb||mar||apr||may||jun||jul||aug||sep||oct||nov||dec||january||february||march||april||may||june||july||august||september||october||november||december||sept)'.freeze
 
 		def day(date)
-			begin
-				Date::DAYNAMES[date.wday]
+			Date::DAYNAMES[date.wday]
 			rescue ArgumentError
 				nil
-			end
 		end
 
 		def method_missing(name, *args, &block)
